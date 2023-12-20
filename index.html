@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/icon-r&m.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Rick & Morty</title>
+</head>
+
+<body>
+    <header>
+        <!-- Debe respetar el diseño “general” dado. Pueden modificarse a gusto colores, fondo, fuentes e íconos. ✔️-->
+        <div class="logo">
+            <img src="media/logo.jpeg" alt="logo-rick-and-morty">
+        </div>
+        <!-- Se debe poder realizar mostrar un listado de personajes de la serie ✔️-->
+        <nav> 
+        <!--Se debe poder filtrar por la propiedad gender (female, male, genderless or unknown)✔️
+            ● Debe ser responsive✔️ -->
+            <ul>
+                <a class="navBar" href="index.html" id="all" tabindex="0">All</a>
+                <a class="navBar" href="#" id="female" tabindex="0">Female</a>
+                <a class="navBar" href="#" id="male" tabindex="0">Male</a>
+                <a class="navBar" href="#" id="genderless" tabindex="0">Genderless</a>
+                <a class="navBar" href="#" id="unknown" tabindex="0">Unknown</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="total-characters">
+                <!-- Se debe mostrar el total de personajes listados✔️ -->
+                <p>Total Characters: <span id="total-characters"></span></p>
+            </div>            
+        </section>
+
+        <section class="cards">
+            <!-- Se debe poder ver la siguiente información de cada personaje: Nombre, Género, Especies, Estado, Origen o Locación✔️-->
+            <div class="container" id="container">
+            </div>
+        </section>
+
+        <section class="bonus">
+            <!-- 💪 Desafíos extra (opcionales)✔️
+            ● Agregar la cantidad de páginas y la página actual en el paginado✔️
+            ● Agregar la posibilidad de ir a una página específica✔️
+            ●Se debe mostrar 20 resultados por página✔️
+            ●Se debe poder ir a la primera página ✔️
+            ●Se debe poder ir a la última página ✔️
+            ●Se debe poder ir a la página siguiente ✔️
+            ●Se debe poder ir a la página anterior ✔️
+            ●Se deben deshabilitar los botones correspondientes cuando no puedan ser utilizados✔️  -->
+
+            <div class="index_pages">            
+                <button type="button"
+                id="first-page"
+                class="pagination-button"
+                >
+                <i class="fas fa-angle-double-left" aria-hidden="true"></i>
+                </button>
+            
+                <button
+                type="button"
+                id="previus-page"
+                class="searchBtn"
+                disabled
+                >
+                <i class="fas fa-angle-left" aria-hidden="true"></i>
+                </button>
+
+                <span id="pageInfo"></span>
+            
+                <button
+                type="button"
+                id="next-page"
+                class="searchBtn"
+                >
+                <i class="fas fa-angle-right" aria-hidden="true"></i>
+                </button>
+    
+                <button
+                type="button"
+                id="last-page"
+                class="pagination-button"
+                >
+                <i class="fas fa-angle-double-right" aria-hidden="true"></i>
+                </button>    
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <i class="fa-brands fa-discord fa-bounce fa-2xl"></i><strong> maria.cg</strong>
+            </div>
+            <div class="footer-rigth">
+                <p>Final Project by <strong>Maria Cristina Gutierrez</strong></p>
+                <p>December 2023</p>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

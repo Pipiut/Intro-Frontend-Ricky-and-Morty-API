@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    background-image: url(media/wallpapersden.com_rick-and-morty-space_3840x2400.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+}
+/* Estilo del nav*/
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    height: 200px;
+    border-radius: 50%;
+    border: #69e225 solid 3px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navBar {
+    color: white;
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: black;
+    text-decoration: none;
+}
+.navBar:hover{
+    border: #69e225 solid 1px;
+    border-radius: 50%;
+    transform: translate(0%, -15%);
+    background-color:  rgba(255, 255, 255, 0.276);
+}
+.total-characters p{
+    text-align: left;
+    font-size:28px;
+    text-indent: 100px;
+}
+.total-characters span{
+    color: #69e225;
+}
+/*Estilo de la Card */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-img img{
+    width: 100px;
+    height: 100px;
+    border: #69e225 3px solid; 
+    border-radius: 50%;
+}
+.container-text{
+    font-size: 12px;
+    color: #d2e054;
+    line-height: auto;
+    text-align: center;
+}
+.card {
+    width: 300px;
+    height: 350px;
+    border: 2px solid #69e225;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    filter:opacity(80%);
+}
+.card:hover {
+    transform: scale(1.05);
+    transition-duration: 0.8s;
+    filter:opacity(100%);
+    background-color: rgba(255, 255, 255, 0.276);
+}
+.card:focus{
+    background-color: rgba(255, 255, 255, 0.276);
+    border-style: inset;
+}
+.info {
+    background-color:#d2e054 ;
+    border-color:#0D3C3C;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    box-shadow: inset;
+}
+.info a{    
+    text-decoration: none;    
+    color:#0D3C3C;
+    font-weight: bold;
+}
+/*Estilo del Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 10px 50px;
+    cursor:text;  
+}
+.footer-left{
+    padding-top: 20px;
+    font-size: 18px;
+}
+.footer-rigth p{
+    text-align: end;
+}
+/* Estilos para la paginacion */
+.index_pages{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.pagination-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.pagination-button:disabled {
+    color: #757575;
+    border-color: #757575;
+}
+.searchBtn{
+    cursor: pointer;
+}
+#pageInfo {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 95%;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+/*Responsive*/
+@media (min-width: 375px)  and (max-width: 884px){
+    body{
+        background-attachment: fixed;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 12px;
+    }
+    .navBar {
+        font-size: 18px;
+        padding: 5px 12px;
+    }
+    .navBar:hover {
+        font-size: 25px;
+        padding: 5px 12px;
+    }
+    .total-characters p{
+        text-align: center;
+        font-size:22px;
+        text-indent: 0px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 25px;
+    }
+    .footer-rigth {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
